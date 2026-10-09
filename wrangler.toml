@@ -1,0 +1,21 @@
+name = "receivify-bot"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# NO SECRETS IN THIS FILE, and none should ever be added.
+#
+# wrangler.toml is committed to git. A token pasted here is a token in your
+# repository history, where deleting the line does not remove it. Use
+# `wrangler secret put NAME` instead — those are stored encrypted by Cloudflare
+# and never appear in the repo:
+#
+#   wrangler secret put BOT_TOKEN
+#   wrangler secret put RECEIVIFY_API_KEY
+#   wrangler secret put WEBHOOK_SECRET
+#   wrangler secret put TG_SECRET
+#   wrangler secret put WEBHOOK_SECRET_PREVIOUS   (optional, during a rotation)
+#
+# API_BASE is the one setting that is not secret. Leave it out unless you are
+# pointing at a self-hosted Receivify.
+[vars]
+# API_BASE = "https://receivify.io"
